@@ -24,4 +24,6 @@ jobs:
         with:
           python-version:: ${{ matrix.python }}
 
-      - run: pip install pyzx
+      - run: pip install matplotlib
+
+      - run: python -c "import matplotlib"
