@@ -24,6 +24,6 @@ jobs:
         with:
           python-version:: ${{ matrix.python }}
 
-      - run: pip install matplotlib
+      - run: pip install pytest-mpl
 
       - run: python -c "import matplotlib"
