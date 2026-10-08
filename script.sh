@@ -4,4 +4,4 @@ git fetch origin add_openqasm_gates
 git checkout --detach FETCH_HEAD
 uv venv
 uv pip install . 'numba>=0.65.1' pytest-mpl
-pytest -W error --doctest-modules
+uv run pytest -W error --doctest-modules
