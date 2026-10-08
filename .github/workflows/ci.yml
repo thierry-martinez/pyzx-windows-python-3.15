@@ -26,4 +26,4 @@ jobs:
 
       - run: pip install pytest-mpl
 
-      - run: python -c "import matplotlib"
+      - run: pytest
