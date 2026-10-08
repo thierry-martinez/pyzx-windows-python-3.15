@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
   pull_request:
   workflow_dispatch:
 
@@ -24,4 +24,4 @@ jobs:
 
       - uses: astral-sh/setup-uv@v10.2.0
 
-      - run: uv run --python ${{ matrix.python}} --with pytest-mpl pytest
+      - run: uv run --python ${{ matrix.python}} bash script.sh
