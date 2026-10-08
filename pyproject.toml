@@ -1,0 +1,17 @@
+[project]
+name = "pyzx-windows-python-3-15"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Thierry Martinez", email = "thierry.martinez@inria.fr" }
+]
+requires-python = ">=3.15"
+dependencies = []
+
+[project.scripts]
+pyzx-windows-python-3-15 = "pyzx_windows_python_3_15:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
